@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWE – Wir suchen DICH für die 3. Liga</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="phone">
+      <!-- iPhone-Statusleiste inkl. Dynamic Island, damit Screenshots echt wirken -->
+      <div class="statusbar">
+        <span class="statusbar-time">20:26</span>
+        <div class="island"></div>
+        <span class="statusbar-icons">
+          <svg viewBox="0 0 18 12" class="icon-signal">
+            <rect x="0" y="8" width="3" height="4" rx="1" />
+            <rect x="5" y="5" width="3" height="7" rx="1" />
+            <rect x="10" y="2" width="3" height="10" rx="1" />
+            <rect x="15" y="0" width="3" height="12" rx="1" opacity=".35" />
+          </svg>
+          <svg viewBox="0 0 16 12" class="icon-wifi">
+            <path d="M8 12 1.5 5.4A9.2 9.2 0 0 1 8 2.8c2.5 0 4.8 1 6.5 2.6Z" />
+          </svg>
+          <svg viewBox="0 0 27 12" class="icon-battery">
+            <rect
+              x="0"
+              y="0"
+              width="23"
+              height="12"
+              rx="3.5"
+              fill="none"
+              stroke="currentColor"
+              opacity=".4"
+            />
+            <rect x="2" y="2" width="15" height="8" rx="2" />
+            <path d="M25 4v4a2.2 2.2 0 0 0 0-4Z" opacity=".4" />
+          </svg>
+        </span>
+      </div>
+
+      <div class="screen">
+        <!-- Profilkopf wie die Hinge-Navigationsleiste: Name einer „Person“
+           zentriert, Menüpunkte rechts – bleibt beim Scrollen oben kleben -->
+        <header class="profile-header">
+          <h1 class="profile-name">WWE - 3. Liga</h1>
+          <button class="menu-btn" aria-label="Menü">
+            <svg viewBox="0 0 24 24">
+              <circle cx="5" cy="12" r="2" />
+              <circle cx="12" cy="12" r="2" />
+              <circle cx="19" cy="12" r="2" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="feed">
+          <!-- Steckbrief-Karte im Stil der Hinge-„Vitals“ -->
+          <section class="card vitals-card" aria-label="Steckbrief">
+            <ul class="vitals-row">
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2v3M8 7h8a3 3 0 0 1 3 3v2H5v-2a3 3 0 0 1 3-3Zm-3 7h14v6H5Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                26
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 3v18M8 6h4M8 10h4M8 14h4M8 18h4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                180&nbsp;cm
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <circle
+                    cx="12"
+                    cy="10"
+                    r="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+                Essen
+              </li>
+            </ul>
+            <ul class="vitals-list">
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <circle
+                    cx="12"
+                    cy="8"
+                    r="4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M5 20c1.4-3.4 4-5 7-5s5.6 1.6 7 5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span class="vital-text">
+                  Weiblich
+                  <span class="vital-note"
+                    >„Wir suchen noch Spielerinnen“</span
+                  ></span
+                >
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 3h10l-1.2 7.5a4 4 0 0 1-7.6 0Zm5 8.5V20m-4 0h8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Trinkt manchmal
+              </li>
+              <li class="has-note">
+                <svg viewBox="0 0 24 24">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="m14.5 14.5 5 5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span class="vital-text">
+                  Kurzfristige Beziehung, offen für Langfristiges
+                  <span class="vital-note"
+                    >„Eine Saison, gern auch länger“</span
+                  >
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">Dieses Jahr will ich unbedingt</h2>
+            <p class="prompt-answer">Dritte Liga spielen 🤩</p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <figure
+            class="card photo-card"
+            data-platzhalter="Bild 1 – Roundnet spielen (beste Seite)"
+          >
+            <img src="images/01-beste-seite.jpg" alt="Roundnet spielen" />
+            <figcaption class="photo-caption">
+              Ich von meiner besten Seite
+            </figcaption>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">
+              Du solltest <em>nicht</em> mit mir ausgehen, wenn&nbsp;…
+            </h2>
+            <p class="prompt-answer">… du Roundnet „Spikeball“ nennst.</p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <figure
+            class="card photo-card"
+            data-platzhalter="Bild 2 – Auf dem Platz mit Kaffeetasse"
+          >
+            <img
+              src="images/02-nach-dem-kaffee.jpg"
+              alt="Auf dem Platz mit einer Tasse Kaffee"
+            />
+            <figcaption class="photo-caption">Ich nach einem Kaffee</figcaption>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">
+              Eine Sache, die ich nie wieder tun werde
+            </h2>
+            <p class="prompt-answer">
+              Auf zwei schlagen, wenn mein(e) Partner:in da ist 😩
+            </p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <figure
+            class="card photo-card"
+            data-platzhalter="Bild 3 – Gruppenbild"
+          >
+            <img src="images/03-gruppenbild.jpg" alt="Gruppenbild vom Team" />
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">Meine irrationalste Angst</h2>
+            <p class="prompt-answer">Teammate mit Gegner verwechseln 🫣</p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <figure
+            class="card photo-card"
+            data-platzhalter="Bild 4 – Felt cute, might delete later"
+          >
+            <img
+              src="images/04-felt-cute.jpg"
+              alt="Felt cute, might delete later"
+            />
+            <figcaption class="photo-caption">
+              Felt cute, might delete later
+            </figcaption>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">Meine Hobbys</h2>
+            <p class="prompt-answer">
+              Roundnet spielen, RoundnetGermany-Stream schauen, Community Days
+            </p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+          <figure
+            class="card photo-card"
+            data-platzhalter="Bild 5 – Zwei Vögel"
+          >
+            <img
+              src="images/05-this-could-be-us.webp"
+              alt="Zwei Vögel nebeneinander"
+            />
+            <figcaption class="photo-caption">Das könnten wir sein</figcaption>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </figure>
+
+          <article class="card prompt-card">
+            <h2 class="prompt-label">Green Flags, auf die ich achte</h2>
+            <p class="prompt-answer">
+              Gute Laune am Netz, viele Rallies und natürlich Snacks!
+            </p>
+            <button class="like-btn" aria-label="Liken">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <footer class="feed-end">
+            <p>Lust auf 3. Liga? Schreib uns!</p>
+            <a
+              class="prompt-label"
+              href="https://www.instagram.com/westwingsessen"
+              >Insta: @westwingsessen</a
+            >
+            <!-- Rechtliche Pflichtlinks: dezent, aber auffindbar -->
+            <nav class="legal-links" aria-label="Rechtliches">
+              <a href="https://tobi-braun.com/de/imprint">Impressum</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://tobi-braun.com/de/privacy">Datenschutz</a>
+            </nav>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Schwebender „Wegwischen“-Button wie in der echten App -->
+      <button class="skip-btn" aria-label="Überspringen">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M6 6l12 12M18 6 6 18"
+            stroke="currentColor"
+            stroke-width="2.4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <nav class="tabbar" aria-label="Navigation">
+        <button class="tab active" aria-label="Entdecken">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="8" height="8" rx="2" />
+            <rect x="13" y="3" width="8" height="8" rx="2" />
+            <rect x="3" y="13" width="8" height="8" rx="2" />
+            <rect x="13" y="13" width="8" height="8" rx="2" />
+          </svg>
+        </button>
+        <button class="tab" aria-label="Standouts">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="m12 2 2.7 6.6L22 9.3l-5.4 4.8L18.2 21 12 17.2 5.8 21l1.6-6.9L2 9.3l7.3-.7Z"
+            />
+          </svg>
+        </button>
+        <button class="tab" aria-label="Likes">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.2 4.5 6 4.5c2.2 0 3.6 1.2 6 3.9 2.4-2.7 3.8-3.9 6-3.9 3.8 0 5.6 4.1 4 7.2C19.5 16.3 12 21 12 21Z"
+            />
+          </svg>
+          <span class="tab-badge">7</span>
+        </button>
+        <button class="tab" aria-label="Matches">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"
+            />
+          </svg>
+        </button>
+        <button class="tab" aria-label="Profil">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6Z" />
+          </svg>
+        </button>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
