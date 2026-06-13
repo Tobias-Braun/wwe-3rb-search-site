@@ -72,7 +72,15 @@ body {
   font-weight: 600;
   background: linear-gradient(var(--bg-app) 60%, transparent);
   pointer-events: none;
+
 }
+
+@media (max-width: 520px), (max-height: 940px) {
+  .statusbar {
+    display: none;
+  }
+}
+
 
 .island {
   position: absolute;
@@ -100,6 +108,12 @@ body {
   padding: 54px 0 110px;
 }
 .screen::-webkit-scrollbar { display: none; }
+
+@media (max-width: 520px), (max-height: 940px) {
+  .screen {
+    padding-top: 24px;
+  }
+}
 
 /* ---------- Profilkopf ---------- */
 
@@ -369,29 +383,6 @@ body {
 .legal-links a:hover { text-decoration: underline; }
 
 .legal-links span { margin: 0 6px; }
-
-/* ---------- Skip-Button & Tabbar ---------- */
-
-.skip-btn {
-  position: absolute;
-  left: 18px;
-  bottom: 92px;
-  z-index: 25;
-  width: 58px;
-  height: 58px;
-  border: none;
-  border-radius: 50%;
-  background: var(--card);
-  color: var(--ink);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, .22);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  transition: transform .15s ease;
-}
-
-.skip-btn:active { transform: scale(.85); }
-.skip-btn svg { width: 26px; height: 26px; }
 
 .tabbar {
   position: absolute;
