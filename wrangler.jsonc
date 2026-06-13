@@ -1,12 +1,13 @@
 {
   // Statisches Profil als „Assets-only“-Worker. Es gibt kein Worker-Skript –
-  // Cloudflare liefert nur die Dateien aus ./public aus. Derselbe Ordner lässt
-  // sich auch direkt über Cloudflare Pages deployen (siehe README).
+  // Cloudflare liefert nur die minifizierten Dateien aus ./dist aus (per
+  // `npm run build` erzeugt). Derselbe Ordner lässt sich auch direkt über
+  // Cloudflare Pages deployen (siehe README).
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "wwe-3-liga",
   "compatibility_date": "2025-06-01",
   "assets": {
-    "directory": "./public",
+    "directory": "./dist",
     // Einzelseite: unbekannte Pfade liefern index.html statt einer 404-Seite.
     "not_found_handling": "single-page-application"
   }
