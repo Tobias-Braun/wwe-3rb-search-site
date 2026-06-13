@@ -1,0 +1,15 @@
+{
+  "name": "wwe-3-liga",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hinge-Profil-Klon zur Spielerinnen-Suche fuer die 3. Liga Roundnet",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "pages:dev": "wrangler pages dev public",
+    "pages:deploy": "wrangler pages deploy public --project-name=wwe-3-liga"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
