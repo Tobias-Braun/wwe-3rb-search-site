@@ -384,6 +384,56 @@ body {
 
 .legal-links span { margin: 0 6px; }
 
+/* ---------- Rechtliche Seiten (Impressum / Datenschutz) ---------- */
+
+/* Kopf wie das Profil, aber mit Zurück-Pfeil links statt Drei-Punkte-Menü */
+.legal-header { padding-top: 14px; }
+
+.back-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  translate: 0 -50%;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  color: var(--ink);
+}
+.back-btn svg { width: 22px; height: 22px; }
+
+/* Lesbarer Fließtext-Block für die Pflichtangaben */
+.legal-doc {
+  padding: 12px 22px 48px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.legal-intro {
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+
+.legal-doc h2 {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 22px 0 6px;
+}
+
+.legal-doc p { margin-bottom: 4px; }
+
+.legal-doc a {
+  color: var(--plum);
+  text-decoration: none;
+}
+.legal-doc a:hover { text-decoration: underline; }
+
+.legal-back {
+  margin-top: 32px;
+  font-size: 13px;
+}
+
 .tabbar {
   position: absolute;
   inset: auto 0 0 0;

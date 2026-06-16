@@ -23,15 +23,18 @@ const js = await readFile(`${SRC}/script.js`, "utf8");
 const { code } = await minifyJs(js);
 await writeFile(`${OUT}/script.js`, code);
 
-// HTML minifizieren (inkl. evtl. eingebettetem CSS/JS)
-const html = await readFile(`${SRC}/index.html`, "utf8");
-const minHtml = await minifyHtml(html, {
-  collapseWhitespace: true,
-  removeComments: true,
-  minifyCSS: true,
-  minifyJS: true,
-});
-await writeFile(`${OUT}/index.html`, minHtml);
+// Alle HTML-Seiten minifizieren (inkl. evtl. eingebettetem CSS/JS)
+const htmlPages = ["index.html", "impressum.html", "datenschutz.html"];
+for (const page of htmlPages) {
+  const html = await readFile(`${SRC}/${page}`, "utf8");
+  const minHtml = await minifyHtml(html, {
+    collapseWhitespace: true,
+    removeComments: true,
+    minifyCSS: true,
+    minifyJS: true,
+  });
+  await writeFile(`${OUT}/${page}`, minHtml);
+}
 
 // Bilder unveraendert uebernehmen
 await cp(`${SRC}/images`, `${OUT}/images`, { recursive: true });
